@@ -1,4 +1,4 @@
-src/
+```src/
 └── main/
     ├── java/
     │   └── com/
@@ -33,3 +33,4 @@ src/
     └── resources/
         ├── application.yml                             # 환경 설정
         └── logback-spring.xml                          # 로깅 설정 (선택)
+```
