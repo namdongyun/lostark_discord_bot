@@ -1,6 +1,7 @@
 package com.example.discordbot;
 
 import com.example.discordbot.config.DiscordConfig;
+import com.example.discordbot.listener.MessageEventListener;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
@@ -22,8 +23,7 @@ public class DiscordBotApplication {
         JDA jda = JDABuilder.createDefault(discordBotToken)
                 .setActivity(Activity.playing("메시지 기다리는 중!"))
                 .enableIntents(GatewayIntent.MESSAGE_CONTENT)
+                .addEventListeners(new MessageEventListener())
                 .build();
-
     }
-
 }
