@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Getter
 @Component
 public class DiscordConfig {
+
     @Value("${discord.bot.token}")
     private String discordBotToken;
-
 }
